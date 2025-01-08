@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List</title>
-</head>
-<body>
-    <div class="flex justify-center">
-        <p class="text-3xl font-bold underline size-fit hover:cursor-pointer hover:scale-125 transition-transform duration-500 text-center pt-2">Hello!</p>
-        <div class="side-bar"></div>
+  </head>
+  <body class="font-mono">
+    <div class="lg:grid lg:grid-cols-6 lg:grid-rows-6">
+      <div
+        class="side-bar lg:row-span-6 lg:col-span-1 lg:grid lg:grid-rows-8 lg:p-3 lg:h-screen row-span-1 col-span-full bg-blue-900"
+      >
+        <img
+          src="../resources/TaskMasterLogo.svg"
+          alt="Task Master Logo"
+          class="lg:row-span-1 lg:self-center lg:size-80 size-20"
+        />
+        <h2
+          class="lg:border-b-2 lg:mb-2 lg:border-blue-500 text-blue-300 lg:self-end lg:text-2xl p-1"
+        >
+          Projects
+        </h2>
+        <div
+          class="lg:row-span-6 lg:overflow-y-auto lg:overflow-x lg:block whitespace-nowrap text-xs lg:text-xl *:text-blue-50"
+        >
+          <ul
+            id="project-list"
+            class="lg:leading-loose *:lg:mt-5 *:hover:cursor-pointer lg:*:w-full lg:*:p-2 lg:block flex p-1"
+            alt="delete"
+          >
+            <li
+              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
+            >
+              A project
+              <img
+                src="../resources/delete_icon.svg"
+                class="hover:sepia hover:scale-125 transition-transform duration-300 size-3 lg:size-5 self-center relative md:bottom-0.5 2xl:bottom-1"
+                alt="delete"
+              />
+            </li>
+            <li
+              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
+            >
+              A project
+              <img
+                src="../resources/delete_icon.svg"
+                class="hover:sepia hover:scale-125 transition-transform duration-300 lg:size-5 self-center relative md:bottom-0.5 2xl:bottom-1"
+                alt="delete"
+                
+              />
+            </li>
+            <li
+              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
+            >
+              A project
+              <img
+                src="../resources/delete_icon.svg"
+                class="hover:sepia hover:scale-125 transition-transform duration-300 lg:size-5 self-center relative md:bottom-0.5 2xl:bottom-1"
+                alt="delete"
+              />
+            </li>
+            <li
+              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
+            >
+              POOP
+              <img
+                src="../resources/delete_icon.svg"
+                class="hover:sepia hover:scale-125 transition-transform duration-300 lg:size-5 self-center relative md:bottom-0.5 2xl:bottom-1"
+              />
+            </li>
+            <li
+            class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
+          >
+            POOP
+            <img
+              src="../resources/delete_icon.svg"
+              class="hover:sepia hover:scale-125 transition-transform duration-300 lg:size-5 self-center relative md:bottom-0.5 2xl:bottom-1"
+            />
+          </li>
+          </ul>
+         
+        </div>
+         <div class="text-white row-span-1 max-s lg:text-sm h-10 hidden lg:visible">Designed by @LMM588</div>
+      </div>
+      <div class="task-details col-span-5 lg:row-span-6 bg-blue-100 h-screen">
         <div class="task-list"></div>
-        <div class="task-details"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
