@@ -10,20 +10,26 @@
       class="grid grid-cols-10 grid-rows-6 bg-blue-100 sm:grid-rows-8 sm:grid-cols-2"
     >
       <div
-        class="side-bar row-span-6 col-span-2 grid grid-rows-8 p-3 h-screen bg-blue-900 sm:col-start-1 sm:row-start-1 sm:row-span-2 sm:h-10 sm:p-10"
+        class="side-bar border-r-8 border-r-blue-500 row-span-6 col-span-2 grid grid-rows-8 p-3 h-screen bg-blue-900 sm:col-start-1 sm:row-start-1 sm:row-span-2 sm:h-10 sm:p-10 sm:flex sm:justify-between sm:items-center"
       >
+        <div class="hidden sm:block text-white">
+          <img src="../resources/navMenuIcon.svg" class="cursor-pointer" />
+        </div>
         <img
           src="../resources/TaskMasterLogo.svg"
           alt="Task Master Logo"
-          class="row-span-1 self-center size-80 justify-self-center sm:size-32"
+          class="row-span-1 self-center size-80 justify-self-center sm:size-24"
         />
-        <h2
-          class="border-b-4 border-blue-300 text-blue-400 self-end p-2 text-4xl xl:text-2xl lg:text-lg md:text-base text-center sm:hidden"
-        >
-          Projects
-        </h2>
+        <div id="projects-wrapper" class="flex justify-between items-center border-b-4 border-blue-500 h-fit self-end mt-2 sm:hidden">
+          <h2
+            class="text-blue-200 font-semibold self-end text-3xl xl:text-2xl lg:text-lg md:text-base sm:hidden"
+          >
+            Projects
+          </h2>
+          <img src="../resources/addIcon.svg" class="size-8 xl:size-7 lg:size-6 mr-2.5 hover:grayscale hover:scale-125 transition-transform duration-30 hover:cursor-pointer">
+        </div>
         <div
-          class="row-span-6 overflow-y-auto overflow-x block whitespace-nowrap text-3xl xl:text-lg *:text-blue-50 lg:text-sm md:text-xs sm:hidden"
+          class="row-span-6 overflow-y-auto overflow-x block whitespace-nowrap text-2xl xl:text-lg lg:text-md md:text-sm sm:hidden *:text-blue-50 self-start"
         >
           <ul
             id="project-list"
@@ -40,75 +46,34 @@
                 alt="delete"
               />
             </li>
-            <li
-              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
-            >
-              A project
-              <img
-                src="../resources/delete_icon.svg"
-                class="hover:sepia hover:scale-125 transition-transform duration-300 size-7 xl:size-5 lg:size-4 md:size-3 self-center"
-                alt="delete"
-              />
-            </li>
-            <li
-              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
-            >
-              Some project
-              <img
-                src="../resources/delete_icon.svg"
-                class="hover:sepia hover:scale-125 transition-transform duration-300 size-7 xl:size-5 lg:size-4 md:size-3 self-center"
-                alt="delete"
-              />
-            </li>
-            <li
-              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
-            >
-              POOP
-              <img
-                src="../resources/delete_icon.svg"
-                class="hover:sepia hover:scale-125 transition-transform duration-300 size-7 xl:size-5 lg:size-4 md:size-3 self-center"
-              />
-            </li>
-            <li
-              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
-            >
-              POOP
-              <img
-                src="../resources/delete_icon.svg"
-                class="hover:sepia hover:scale-125 transition-transform duration-300 size-7 xl:size-5 lg:size-4 md:size-3 self-center"
-              />
-            </li>
           </ul>
-        </div>
-        <div class="text-white row-span-1 max-s text-sm h-10 hidden">
-          Designed by @LMM588
         </div>
       </div>
       <h2
-        class="col-start-3 col-span-full row-start-1 text-3xl self-end text-center whitespace-nowrap mb-4 sm:row-start-2 sm:row-end-2 sm:col-start-1 sm:col-span-2"
+        class="col-start-4 col-span-1 row-start-1 text-3xl self-end whitespace-nowrap mb-4 sm:row-start-2 sm:row-end-2 sm:col-start-1 sm:col-span-2 sm:mt-5 sm:text-center"
       >
         Some Project
       </h2>
       <div
-        class="col-start-4 col-span-3 row-start-2 row-span-4 mr-3 rounded-b-lg bg-blue-50 shadow-lg sm:col-start-1 sm:col-span-2 sm:row-start-3 sm:row-span-2 sm:w-9/12 sm:justify-self-center sm:p-0 sm:m-0"
+        class="col-start-7 col-span-3 row-start-2 row-span-4 ml-3 rounded-b-lg bg-blue-50 shadow-lg sm:col-start-1 sm:col-span-2 sm:row-start-3 sm:row-span-2 sm:w-9/12 sm:justify-self-center sm:p-0 sm:m-0 border-x-8 border-x-blue-900 border-b-8 border-b-blue-900"
       >
         <h2 class="w-full bg-blue-900 text-white p-3 text-2xl md:text-xl">
           Tasks:
         </h2>
-        <div class="task-list"></div>
-        <ul class="p-3 leading-loose *:text-xl md:text-lg">
-          <li>Some Task</li>
-          <li>Some Task</li>
-          <li>Some Task</li>
-        </ul>
+        <ul class="p-3 leading-loose *:text-xl md:text-lg" id="task-list"></ul>
       </div>
       <div
-        class="task-details col-start-7 col-span-3 row-start-2 row-span-4 bg-blue-50 rounded-b-lg shadow-lg sm:col-start-1 sm:col-span-2 sm:row-start-6 sm:row-span-2 sm:w-9/12 sm:justify-self-center sm:p-0 sm:m-0"
+        class="task-details col-start-4 col-span-3 row-start-2 row-span-4 mr-3 bg-blue-50 rounded-b-lg shadow-lg sm:col-start-1 sm:col-span-2 sm:row-start-6 sm:row-span-2 sm:w-9/12 sm:justify-self-center sm:p-0 sm:m-0 border-x-8 border-x-blue-900 border-b-8 border-b-blue-900"
       >
         <h2 class="w-full bg-blue-900 text-white p-3 text-2xl md:text-xl">
-          Details:
+          Project Details:
         </h2>
       </div>
     </div>
+    <footer
+      class="text-white bg-blue-950 max-s text-sm p-5 sm:hidden"
+    >
+      Designed by Logan McKee/@LMM588 for The Odin Project
+    </footer>
   </body>
 </html>
