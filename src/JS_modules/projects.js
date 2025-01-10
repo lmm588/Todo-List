@@ -1,3 +1,5 @@
+const projects = [];
+
 const Project = function(projectName) {
   const name = projectName;
   const tasks = [];
@@ -7,4 +9,8 @@ const Project = function(projectName) {
 export function createProject(projectName) {
   const project = Project(projectName);
   return project;
+}
+
+export function addProjectToList(project) {
+  projects.push(project);
 }
