@@ -22,7 +22,7 @@
         />
         <div
           id="projects-wrapper"
-          class="flex justify-between items-center border-b-4 border-blue-500 h-fit self-end mt-2 sm:hidden"
+          class="flex justify-between items-center border-b-4 border-blue-300 h-fit self-end mt-2 sm:hidden *:transition-[font-size] *:duration-500"
         >
           <h2
             class="text-blue-200 font-semibold self-end text-3xl xl:text-2xl lg:text-lg md:text-base sm:hidden"
@@ -36,23 +36,13 @@
           />
         </div>
         <div
-          class="row-span-6 overflow-y-auto overflow-x block whitespace-nowrap text-2xl xl:text-lg lg:text-base md:text-sm sm:hidden *:text-blue-50 self-start"
+          class="row-span-6 overflow-y-auto overflow-x block whitespace-nowrap text-2xl xl:text-lg lg:text-base md:text-sm sm:hidden *:text-blue-50 self-start *:transition-[font-size] *:duration-500"
         >
           <ul
             id="project-list"
-            class="leading-loose *:mt-4 lg:*:mt-3 md:*:mt-2 *:hover:cursor-pointer *:w-full *:p-1 md:p-0.5 block p-1 sm:flex"
+            class="leading-loose *:mt-4 lg:*:mt-3 md:*:mt-2 *:hover:cursor-pointer *:min-w-max *:p-1 md:p-0.5 block p-1 sm:flex"
             alt="delete"
           >
-            <li
-              class="transition-[background-color] hover:bg-blue-950 ease-in-out duration-400 flex justify-between"
-            >
-              A project
-              <img
-                src="../resources/delete_icon.svg"
-                class="hover:sepia hover:scale-125 transition-transform duration-300 size-7 xl:size-5 lg:size-4 md:size-3 self-center"
-                alt="delete"
-              />
-            </li>
           </ul>
         </div>
       </div>
@@ -65,7 +55,7 @@
         class="col-start-7 col-span-3 row-start-2 row-span-4 ml-3 rounded-b-lg bg-blue-50 drop-shadow-2xl sm:col-start-1 sm:col-span-2 sm:row-start-6 sm:row-span-2 sm:w-9/12 sm:justify-self-center sm:p-0 sm:m-0 border-x-8 border-x-blue-900 border-b-8 border-b-blue-900"
       >
         <h2
-          class="w-full bg-blue-900 text-white p-3 text-2xl xl:text-2xl lg:text-lg md:text-base"
+          class="w-full bg-blue-900 text-white p-3 text-2xl xl:text-2xl lg:text-lg md:text-base font-semibold"
         >
           Tasks:
         </h2>
@@ -75,7 +65,7 @@
         class="task-details col-start-4 col-span-3 row-start-2 row-span-4 mr-3 bg-blue-50 rounded-b-lg drop-shadow-2xl sm:col-start-1 sm:col-span-2 sm:row-start-3 sm:row-span-2 sm:w-9/12 sm:justify-self-center sm:p-0 sm:m-0 border-x-8 border-x-blue-900 border-b-8 border-b-blue-900"
       >
         <h2
-          class="w-full bg-blue-900 text-white p-3 text-2xl whitespace-nowrap xl:text-2xl lg:text-lg md:text-base"
+          class="w-full bg-blue-900 text-white p-3 text-2xl whitespace-nowrap xl:text-2xl lg:text-lg md:text-base font-semibold"
         >
           Project Details:
         </h2>
