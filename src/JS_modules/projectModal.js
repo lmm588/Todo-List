@@ -32,9 +32,12 @@ export default function projectsModal() {
     projectListItem.classList.add(
       "transition-[background-color]",
       "hover:bg-blue-950",
+      "rounded-sm",
       "ease-in-out",
       "duration-400",
       "flex",
+      "pl-2",
+      "pr-2",
       "justify-between",
       "project-delete-icon"
     );

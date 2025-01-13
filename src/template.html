@@ -10,7 +10,7 @@
       class="grid grid-cols-10 grid-rows-6 bg-blue-100 sm:grid-rows-8 sm:grid-cols-2"
     >
       <div
-        class="side-bar row-span-6 col-span-2 grid grid-rows-8 p-3 h-screen bg-blue-900 sm:col-start-1 sm:row-start-1 sm:row-span-2 sm:h-10 sm:p-10 sm:flex sm:justify-between sm:items-center"
+        class="side-bar row-span-6 col-span-2 grid grid-rows-8 p-2 h-screen bg-blue-900 sm:col-start-1 sm:row-start-1 sm:row-span-2 sm:h-10 sm:p-10 sm:flex sm:justify-between sm:items-center"
       >
         <div class="hidden sm:block text-white">
           <img src="../resources/navMenuIcon.svg" class="cursor-pointer" />
@@ -18,11 +18,11 @@
         <img
           src="../resources/TaskMasterLogo.svg"
           alt="Task Master Logo"
-          class="row-span-1 self-center size-80 justify-self-center sm:size-24"
+          class="row-span-1 mt-4 self-center justify-self-center sm:size-24 w-80 h-auto"
         />
         <div
           id="projects-wrapper"
-          class="flex justify-between items-center border-b-4 border-blue-300 h-fit self-end mt-2 sm:hidden *:transition-[font-size] *:duration-500"
+          class="flex justify-between items-center border-b-2 border-blue-300 h-fit self-end mt-1 sm:hidden *:transition-[font-size, transform] *:duration-300 ease-out"
         >
           <h2
             class="text-blue-200 font-semibold self-end text-3xl xl:text-2xl lg:text-lg md:text-base sm:hidden"
@@ -31,17 +31,16 @@
           </h2>
           <img
             src="../resources/addIcon.svg"
-            class="size-8 xl:size-7 lg:size-6 mr-1.5 hover:grayscale hover:scale-125 transition-transform duration-30 hover:cursor-pointer"
+            class="size-8 xl:size-7 lg:size-6 mr-1.5 hover:scale-125 ease-out hover:cursor-pointer"
             id="add-project"
           />
         </div>
         <div
-          class="row-span-6 overflow-y-auto overflow-x block whitespace-nowrap text-2xl xl:text-lg lg:text-base md:text-sm sm:hidden *:text-blue-50 self-start *:transition-[font-size] *:duration-500"
+          class="row-span-6 overflow-y-auto block whitespace-nowrap text-2xl xl:text-lg lg:text-base md:text-sm sm:hidden *:text-blue-50 self-start"
         >
           <ul
             id="project-list"
-            class="leading-loose *:mt-4 lg:*:mt-3 md:*:mt-2 *:hover:cursor-pointer *:min-w-max *:p-1 md:p-0.5 block p-1 sm:flex"
-            alt="delete"
+            class="leading-loose *:mt-4 *:hover:cursor-pointer *:min-w-max sm:flex"
           >
           </ul>
         </div>
